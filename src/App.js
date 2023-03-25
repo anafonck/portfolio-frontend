@@ -1,10 +1,13 @@
-
 import './App.css';
+import './styles/global.css'
+import Navbar from './components/Navbar';
+import Content from './components/Content';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Página em desenvolvimento</h1>
+    <div className="container-app">
+      <Navbar></Navbar>
+      <Content></Content>
     </div>
   );
 }
