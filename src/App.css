@@ -8,16 +8,6 @@
     background-size: cover;
 }
 
-nav {
-    width: 20%;
-    height: 100%;
-}
-
-.content {
-    width: 80%;
-    height: 100%;
-}
-
 @media (max-width: 480px) {
     .container-app {
         flex-direction: column;
