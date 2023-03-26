@@ -13,12 +13,14 @@ h2 {
     text-align: center;
     color: #ffffff;
     font-size: 3rem;
-    text-shadow: 4px 2px 1px #ac8395;
+    text-shadow: 8px 4px 10px #ac8395;
     margin: 10% 0;
 }
 
 .main-content h2 {
     font-size: 1.3rem;
+    font-weight: 400;
+    font-style: italic;
     margin: 0%;
 }
 
