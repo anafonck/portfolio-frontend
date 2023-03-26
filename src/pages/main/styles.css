@@ -10,6 +10,7 @@
 
 .main-content h1,
 h2 {
+    text-align: center;
     color: #ffffff;
     font-size: 3rem;
     text-shadow: 4px 2px 1px #ac8395;
@@ -19,4 +20,15 @@ h2 {
 .main-content h2 {
     font-size: 1.3rem;
     margin: 0%;
+}
+
+@media (max-width: 480px) {
+
+    .main-content h1 {
+        font-size: 2rem;
+    }
+
+    .main-content h2 {
+        font-size: 1rem;
+    }
 }

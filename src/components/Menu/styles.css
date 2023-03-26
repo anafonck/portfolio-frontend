@@ -19,8 +19,10 @@
 .container-menu ul li {
     margin-top: 2%;
     padding: 2%;
+    font-size: 1rem;
+    font-weight: 400;
     box-shadow: 2px 2px 2px 1px rgba(196, 129, 130, 0.2);
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.8);
     color: #ac8395;
 }
 
@@ -42,6 +44,3 @@
         display: none;
     }
 }
-
-
-@media (min-width: 1025px) {}
