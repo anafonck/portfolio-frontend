@@ -68,9 +68,9 @@
 
     .personal-info img {
         position: absolute;
-        top: -25%;
+        top: -20%;
         left: 5%;
-        width: 10%;
+        width: 15%;
     }
 
     .social-icon img {
