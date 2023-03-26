@@ -9,7 +9,7 @@ import PageContext from '../../config/contexts';
 
 
 const Navbar = () => {
-    const { setPageContent } = useContext(PageContext);
+    const { setPageContent, setModalState } = useContext(PageContext);
     return (
         <div className='container-navbar'>
             <div className='personal-info'>
@@ -22,7 +22,12 @@ const Navbar = () => {
                 ></img>
             </div>
             <Menu className='menu'></Menu>
-            <img className='burguer-menu' src={BurguerMenu} alt='menu'></img>
+            <img
+                className='burguer-menu'
+                src={BurguerMenu}
+                alt='menu'
+                onClick={() => setModalState(true)}>
+            </img>
             <div className='social-icon'>
                 <img src={LinkedInIcon} alt='linkedin icon'></img>
                 <img src={GithubIcon} alt='github-icon'></img>
