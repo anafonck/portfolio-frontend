@@ -5,17 +5,17 @@
     justify-content: center;
 }
 
+.burguer-menu {
+    position: relative;
+    top: 2%;
+    left: 40%;
+}
+
 @media (max-width: 480px) {
     .container-content {
         width: 100%;
         height: 100%;
-        position: absolute;
-    }
-
-    .burguer-menu {
         position: relative;
-        top: 2%;
-        left: 40%;
     }
 
 }
@@ -27,11 +27,6 @@
         position: relative;
     }
 
-    .burguer-menu {
-        position: relative;
-        top: 2%;
-        left: 40%;
-    }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {

@@ -1,0 +1,36 @@
+.container-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    background-image: url('../../assets/background.jpg');
+    background-position: center;
+}
+
+.modal-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 90%;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.close-icon {
+    position: relative;
+    top: -45%;
+    left: 55%;
+}
+
+.modal-options li {
+    font-size: 1.5rem;
+    list-style: none;
+    text-align: center;
+    margin-top: 50%;
+    padding: 5%;
+    color: #ffffff;
+    text-shadow: 1px 1px #8f7287;
+}

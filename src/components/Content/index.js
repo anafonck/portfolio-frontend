@@ -9,11 +9,15 @@ import { useContext } from 'react';
 import PageContext from '../../config/contexts';
 
 const Content = () => {
-    const { pageContent } = useContext(PageContext);
+    const { pageContent, setModalState } = useContext(PageContext);
 
     return (
         <div className='container-content'>
-            <img className='burguer-menu' src={BurguerMenu} alt='menu'></img>
+            <img
+                className='burguer-menu'
+                src={BurguerMenu}
+                onClick={() => setModalState(true)}
+                alt='menu'></img>
             {pageContent === 'main' &&
                 <Main></Main>
             }
