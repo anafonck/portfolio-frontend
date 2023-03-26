@@ -1,18 +1,34 @@
 import './styles.css';
-import About from '../../pages/about'
-import Contact from '../../pages/contact'
-import Main from '../../pages/main'
-import News from '../../pages/news'
-import Portfolio from '../../pages/portfolio'
+import About from '../../pages/About'
+import Contact from '../../pages/Contact'
+import Main from '../../pages/Main'
+import News from '../../pages/News'
+import Portfolio from '../../pages/Portfolio';
+import BurguerMenu from '../../assets/hamburger-menu.png';
+import { useContext } from 'react';
+import PageContext from '../../config/contexts';
 
 const Content = () => {
+    const { pageContent } = useContext(PageContext);
+
     return (
         <div className='container-content'>
-            <About></About>
-            <Contact></Contact>
-            <Main></Main>
-            <News></News>
-            <Portfolio></Portfolio>
+            <img className='burguer-menu' src={BurguerMenu} alt='menu'></img>
+            {pageContent === 'main' &&
+                <Main></Main>
+            }
+            {pageContent === 'about' &&
+                <About></About>
+            }
+            {pageContent === 'contact' &&
+                <Contact></Contact>
+            }
+            {pageContent === 'portfolio' &&
+                <Portfolio></Portfolio>
+            }
+            {pageContent === 'news' &&
+                <News></News>
+            }
         </div>
     )
 }
