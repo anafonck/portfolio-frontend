@@ -7,10 +7,10 @@ const Menu = () => {
     return (
         <div className='container-menu'>
             <ul>
-                <li onClick={() => setPageContent('about')}>sobre</li>
-                <li onClick={() => setPageContent('contact')}>contato</li>
-                <li onClick={() => setPageContent('portfolio')}>portfolio</li>
-                <li onClick={() => setPageContent('news')}>conteudo</li>
+                <li onClick={() => setPageContent('about')}>Sobre</li>
+                <li onClick={() => setPageContent('contact')}>Contato</li>
+                <li onClick={() => setPageContent('portfolio')}>Portfolio</li>
+                <li onClick={() => setPageContent('news')}>Conteúdo</li>
             </ul>
         </div>
     )
