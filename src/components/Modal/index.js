@@ -15,18 +15,21 @@ const Modal = () => {
     return (
         <div className='container-modal'>
             <div className='modal-content'>
-                <img
-                    className='home-icon'
-                    src={HomeIcon}
-                    onClick={() => handleOptions('main')}
-                    alt='home icon'>
-                </img>
-                <img
-                    className='close-icon'
-                    src={CloseIcon}
-                    onClick={() => setModalState(false)}
-                    alt='close icon'>
-                </img>
+                <div className='modal-header'>
+                    <img
+                        className='home-icon'
+                        src={HomeIcon}
+                        onClick={() => handleOptions('main')}
+                        alt='home icon'>
+                    </img>
+                    <img
+                        className='close-icon'
+                        src={CloseIcon}
+                        onClick={() => setModalState(false)}
+                        alt='close icon'>
+                    </img>
+                </div>
+
                 <ul className='modal-options'>
                     <li onClick={() => handleOptions('about')}>Sobre</li>
                     <li onClick={() => handleOptions('portfolio')}>Portfolio</li>
