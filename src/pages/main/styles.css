@@ -2,14 +2,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     width: 100%;
     height: 100%;
 }
 
-.main-content h1,
-h2 {
+.main-content h1 {
     text-align: center;
     color: #ffffff;
     font-size: 3rem;
@@ -17,20 +16,9 @@ h2 {
     margin: 10% 0;
 }
 
-.main-content h2 {
-    font-size: 1.3rem;
-    font-weight: 400;
-    font-style: italic;
-    margin: 0%;
-}
 
 @media (max-width: 480px) {
-
     .main-content h1 {
         font-size: 2rem;
-    }
-
-    .main-content h2 {
-        font-size: 1rem;
     }
 }

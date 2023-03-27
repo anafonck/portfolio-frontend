@@ -1,5 +1,6 @@
 import './styles.css';
 import CloseIcon from '../../assets/close-icon.png'
+import HomeIcon from '../../assets/home-icon.png'
 import { useContext } from 'react';
 import PageContext from '../../config/contexts';
 
@@ -14,6 +15,12 @@ const Modal = () => {
     return (
         <div className='container-modal'>
             <div className='modal-content'>
+                <img
+                    className='home-icon'
+                    src={HomeIcon}
+                    onClick={() => handleOptions('main')}
+                    alt='home icon'>
+                </img>
                 <img
                     className='close-icon'
                     src={CloseIcon}
