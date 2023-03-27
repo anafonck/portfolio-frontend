@@ -21,9 +21,9 @@
     padding: 2%;
     font-size: 1rem;
     font-weight: 400;
-    box-shadow: 2px 2px 2px 1px rgba(196, 129, 130, 0.2);
-    background-color: rgba(255, 255, 255, 0.8);
-    color: #ac8395;
+    color: #ffffff;
+    box-shadow: 1px 1px 10px #ffffff;
+    background-color: rgba(172, 131, 149, 0.5);
 }
 
 
