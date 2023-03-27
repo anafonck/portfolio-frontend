@@ -3,17 +3,20 @@ import LinkedInIcon from '../../assets/linkedin-icon.png';
 import GithubIcon from '../../assets/github-icon.png';
 import Button from '../../components/Button';
 import { useState } from 'react';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import api from '../../config/http'
 
 const Contact = () => {
     const [form, setForm] = useState(
         {
-            nome: '',
+            name: '',
             email: '',
-            telefone: '',
-            mensagem: ''
+            phone: '',
+            message: ''
         }
     );
+
+    const [responseMessage, setResponseMessage] = useState('teste');
 
     function handleSetForm(e) {
         e.preventDefault();
@@ -22,7 +25,20 @@ const Contact = () => {
     }
 
     async function handleSubmit(e) {
+        e.preventDefault();
 
+        try {
+            const response = await api.post('/contact', {
+                name: form.name,
+                email: form.email,
+                phone: form.phone,
+                message: form.message,
+            });
+            setResponseMessage(response.message)
+
+        } catch (error) {
+            setResponseMessage(error.message)
+        }
     }
 
     return (
@@ -47,9 +63,9 @@ const Contact = () => {
                 <form onSubmit={(e) => handleSubmit(e)}>
                     <label>Nome
                         <input
-                            name='nome'
+                            name='name'
                             type='text'
-                            value={form.nome}
+                            value={form.name}
                             onChange={(e) => handleSetForm(e)}
                         ></input>
                     </label>
@@ -63,14 +79,24 @@ const Contact = () => {
                         ></input>
                     </label>
 
-                    <label className='message-area'>Mensagem
+                    <label>Telefone
                         <input
-                            name='mensagem'
+                            name='phone'
                             type='text'
-                            value={form.mensagem}
+                            value={form.phone}
                             onChange={(e) => handleSetForm(e)}
                         ></input>
                     </label>
+
+                    <label className='message-area'>Mensagem
+                        <input
+                            name='message'
+                            type='text'
+                            value={form.message}
+                            onChange={(e) => handleSetForm(e)}
+                        ></input>
+                    </label>
+                    <span>{responseMessage}</span>
                     <Button>Enviar mensagem</Button>
                 </form>
             </div>
