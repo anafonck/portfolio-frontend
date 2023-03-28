@@ -40,7 +40,7 @@ const Contact = () => {
                 </Link>
             </div>
 
-            <span>Ou</span>
+            <span >Ou</span>
 
             <div className='form-container'>
                 <span>Enviar uma mensagem aqui:</span>
