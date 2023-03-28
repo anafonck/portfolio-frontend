@@ -16,7 +16,7 @@ const Contact = () => {
         }
     );
 
-    const [responseMessage, setResponseMessage] = useState('teste');
+    const [responseMessage, setResponseMessage] = useState('');
 
     function handleSetForm(e) {
         e.preventDefault();
@@ -37,7 +37,7 @@ const Contact = () => {
             setResponseMessage(response.message)
 
         } catch (error) {
-            setResponseMessage(error.message)
+            setResponseMessage('Mensagem não enviada. Por favor, tente novamente mais tarde.')
         }
     }
 
@@ -56,7 +56,7 @@ const Contact = () => {
                 </Link>
             </div>
 
-            <span >Ou</span>
+            <span className='or' >ou</span>
 
             <div className='form-container'>
                 <span>Enviar uma mensagem aqui:</span>
