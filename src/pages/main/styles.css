@@ -9,11 +9,13 @@
 }
 
 .main-content h1 {
+    font-family: 'Sacramento', cursive;
     text-align: center;
     color: #ffffff;
-    font-size: 3rem;
-    text-shadow: 8px 4px 10px #ac8395;
+    font-size: 4rem;
+    text-shadow: 2px 2px 2px #8f7287;
     margin: 10% 0;
+    font-weight: bold;
 }
 
 
