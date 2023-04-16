@@ -3,24 +3,30 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    flex-wrap: wrap;
     width: 100%;
     height: 100%;
 }
 
 .main-content h1 {
-    font-family: 'Sacramento', cursive;
+    font-style: italic;
     text-align: center;
     color: #ffffff;
-    font-size: 4rem;
     text-shadow: 2px 2px 2px #8f7287;
-    margin: 10% 0;
-    font-weight: bold;
 }
 
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
 
 @media (max-width: 480px) {
     .main-content h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 800px) {
+    .main-content h1 {
+        font-size: 2.5rem;
     }
 }

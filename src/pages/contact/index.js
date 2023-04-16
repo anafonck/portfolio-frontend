@@ -44,7 +44,7 @@ const Contact = () => {
     return (
         <div className='container-contact'>
             <div className='social-media'>
-                <span>Você pode me encontrar no Linkedin,</span>
+                <span className='contact-text'>Você pode me encontrar no Linkedin</span>
                 <Link to='https://www.linkedin.com/in/ana-cz-fonseca/' target='_blank'>
                     <img src={LinkedInIcon}
                         alt='linkedin icon'></img>

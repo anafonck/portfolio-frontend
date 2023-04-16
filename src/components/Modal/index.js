@@ -1,8 +1,8 @@
-import './styles.css';
-import CloseIcon from '../../assets/close-icon.png'
-import HomeIcon from '../../assets/home-icon.png'
 import { useContext } from 'react';
+import CloseIcon from '../../assets/close-icon.png';
+import HomeIcon from '../../assets/home-icon.png';
 import PageContext from '../../config/contexts';
+import './styles.css';
 
 const Modal = () => {
     const { setModalState, setPageContent } = useContext(PageContext);
@@ -34,7 +34,6 @@ const Modal = () => {
                     <li onClick={() => handleOptions('about')}>Sobre</li>
                     <li onClick={() => handleOptions('portfolio')}>Portfolio</li>
                     <li onClick={() => handleOptions('contact')} >Contatos</li>
-                    <li onClick={() => handleOptions('news')} >Conteúdo</li>
                 </ul>
             </div>
         </div>

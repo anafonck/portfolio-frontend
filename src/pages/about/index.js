@@ -1,17 +1,16 @@
+import booksIcon from '../../assets/personal/books-icon.png';
+import coffeeIcon from '../../assets/personal/coffee-icon.png';
+import dogIcon from '../../assets/personal/dog-icon.png';
+import familyIcon from '../../assets/personal/family-icon.png';
+import cssIcon from '../../assets/tech/css-icon.png';
+import htmlIcon from '../../assets/tech/html-icon.png';
+import javaIcon from '../../assets/tech/java-icon.png';
+import jsIcon from '../../assets/tech/js-icon.png';
+import mongodbIcon from '../../assets/tech/mongodb-icon.png';
+import nodeIcon from '../../assets/tech/node-icon.png';
+import postgresqlIcon from '../../assets/tech/postgres-icon.png';
+import reactIcon from '../../assets/tech/react-icon.png';
 import './styles.css';
-import familyIcon from '../../assets/personal/family-icon.png'
-import dogIcon from '../../assets/personal/dog-icon.png'
-import coffeeIcon from '../../assets/personal/coffee-icon.png'
-import booksIcon from '../../assets/personal/books-icon.png'
-import htmlIcon from '../../assets/tech/html-icon.png'
-import cssIcon from '../../assets/tech/css-icon.png'
-import jsIcon from '../../assets/tech/js-icon.png'
-import nodeIcon from '../../assets/tech/node-icon.png'
-import reactIcon from '../../assets/tech/react-icon.png'
-import postgresqlIcon from '../../assets/tech/postgres-icon.png'
-import javaIcon from '../../assets/tech/java-icon.png'
-import mongodbIcon from '../../assets/tech/mongodb-icon.png'
-
 
 const About = () => {
 

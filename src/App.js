@@ -1,10 +1,10 @@
-import './App.css';
-import './styles/global.css'
-import Navbar from './components/Navbar';
-import Modal from './components/Modal';
-import Content from './components/Content';
-import PageContext from './config/contexts';
 import { useState } from 'react';
+import './App.css';
+import Content from './components/Content';
+import Modal from './components/Modal';
+import Navbar from './components/Navbar';
+import PageContext from './config/contexts';
+import './styles/global.css';
 
 function App() {
   const [pageContent, setPageContent] = useState('main');
