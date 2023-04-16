@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.ec2ed54d.css",
-    "main.js": "/static/js/main.f860b95e.js",
-    "static/media/background.jpg": "/static/media/background.54a075da7d96aca5a3f1.jpg",
+    "main.css": "/static/css/main.fdc98a6d.css",
+    "main.js": "/static/js/main.cd817f48.js",
+    "static/media/dindin-front.svg": "/static/media/dindin-front.938d70344c76d6f1ec08562aba345a61.svg",
+    "static/media/background.jpg": "/static/media/background.4e31583cb51fd1b8c7ef.jpg",
     "static/media/profile-img.jpeg": "/static/media/profile-img.09e11af40ff5355a530c.jpeg",
     "index.html": "/index.html",
-    "main.ec2ed54d.css.map": "/static/css/main.ec2ed54d.css.map",
-    "main.f860b95e.js.map": "/static/js/main.f860b95e.js.map"
+    "static/media/dindin-logo.svg": "/static/media/dindin-logo.c2aceb7b19bc479e95a09433dc00528a.svg",
+    "main.fdc98a6d.css.map": "/static/css/main.fdc98a6d.css.map",
+    "main.cd817f48.js.map": "/static/js/main.cd817f48.js.map"
   },
   "entrypoints": [
-    "static/css/main.ec2ed54d.css",
-    "static/js/main.f860b95e.js"
+    "static/css/main.fdc98a6d.css",
+    "static/js/main.cd817f48.js"
   ]
 }
