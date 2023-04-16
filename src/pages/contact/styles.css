@@ -4,15 +4,18 @@
     justify-content: space-evenly;
     width: 90%;
     height: 90%;
-    color: #8f7287;
+    color: #a33159;
     font-weight: 500;
 }
 
+.contact-text {
+    text-align: center;
+}
+
 .or {
-    font-family: 'Sacramento', cursive;
     font-size: 3.5rem;
     font-weight: 100;
-    text-shadow: 1px 1px 1px #8f7287;
+    text-shadow: 1px 1px 1px #a33159;
     color: #ffffff;
 }
 

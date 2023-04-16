@@ -1,0 +1,22 @@
+.container-portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90%;
+    height: 100%;
+}
+
+.container-projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+}
+
+@media (max-width: 480px) {
+    .container-projects {
+        flex-direction: column;
+    }
+}

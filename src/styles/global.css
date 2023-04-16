@@ -1,3 +1,7 @@
+* {
+    font-family: 'Space Mono', monospace;
+}
+
 .personal-info img {
     border: 2px dashed #ffffff;
 }
